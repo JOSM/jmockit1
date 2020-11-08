@@ -66,16 +66,16 @@
       </resources>
       <plugins>
          <plugin>
-            <artifactId>maven-compiler-plugin</artifactId><version>3.8.0</version>
+            <artifactId>maven-compiler-plugin</artifactId><version>3.8.1</version>
             <configuration>
                <encoding>UTF-8</encoding>
-               <source>1.7</source><target>1.7</target>
+               <source>1.8</source><target>1.8</target>
                <compilerArgs><arg>-Xlint:none</arg></compilerArgs>
                <useIncrementalCompilation>false</useIncrementalCompilation>
             </configuration>
          </plugin>
          <plugin>
-            <artifactId>maven-jar-plugin</artifactId><version>3.1.0</version>
+            <artifactId>maven-jar-plugin</artifactId><version>3.2.0</version>
             <configuration>
                <archive>
                   <addMavenDescriptor>false</addMavenDescriptor>
@@ -91,7 +91,7 @@
             </configuration>
          </plugin>
          <plugin>
-            <artifactId>maven-source-plugin</artifactId><version>3.0.1</version>
+            <artifactId>maven-source-plugin</artifactId><version>3.2.1</version>
             <configuration>
                <archive>
                   <addMavenDescriptor>false</addMavenDescriptor>
@@ -112,7 +112,7 @@
             </executions>
          </plugin>
          <plugin>
-            <artifactId>maven-javadoc-plugin</artifactId><version>3.0.1</version>
+            <artifactId>maven-javadoc-plugin</artifactId><version>3.2.0</version>
             <configuration>
                <encoding>UTF-8</encoding>
                <nodeprecated>true</nodeprecated>
@@ -164,7 +164,7 @@
             </dependencies>
          </plugin>
          <plugin>
-            <groupId>org.jacoco</groupId><artifactId>jacoco-maven-plugin</artifactId><version>0.8.4</version>
+            <groupId>org.jacoco</groupId><artifactId>jacoco-maven-plugin</artifactId><version>0.8.5</version>
             <executions>
                <execution><id>default-prepare-agent</id><goals><goal>prepare-agent</goal></goals></execution>
                <execution><id>default-report</id><goals><goal>report</goal></goals><phase>test</phase></execution>
@@ -194,14 +194,14 @@
 
    <dependencies>
       <dependency>
-         <groupId>com.github.spotbugs</groupId><artifactId>spotbugs-annotations</artifactId><version>4.0.0</version>
+         <groupId>com.github.spotbugs</groupId><artifactId>spotbugs-annotations</artifactId><version>4.1.4</version>
       </dependency>
       <dependency>
-         <groupId>junit</groupId><artifactId>junit</artifactId><version>4.13</version>
+         <groupId>junit</groupId><artifactId>junit</artifactId><version>4.13.1</version>
          <optional>true</optional>
       </dependency>
       <dependency>
-         <groupId>org.junit.jupiter</groupId><artifactId>junit-jupiter-engine</artifactId><version>5.6.0</version>
+         <groupId>org.junit.jupiter</groupId><artifactId>junit-jupiter-engine</artifactId><version>5.7.0</version>
          <optional>true</optional>
          <exclusions>
             <exclusion><groupId>org.apiguardian</groupId><artifactId>apiguardian-api</artifactId></exclusion>
@@ -211,7 +211,7 @@
          </exclusions>
       </dependency>
       <dependency>
-         <groupId>org.testng</groupId><artifactId>testng</artifactId><version>7.1.0</version>
+         <groupId>org.testng</groupId><artifactId>testng</artifactId><version>7.3.0</version>
          <optional>true</optional>
       </dependency>
       <dependency>
@@ -222,11 +222,11 @@
          </exclusions>
       </dependency>
       <dependency>
-         <groupId>org.springframework</groupId><artifactId>spring-web</artifactId><version>5.2.4.RELEASE</version>
+         <groupId>org.springframework</groupId><artifactId>spring-web</artifactId><version>5.2.10.RELEASE</version>
          <optional>true</optional>
       </dependency>
       <dependency>
-         <groupId>org.springframework</groupId><artifactId>spring-context</artifactId><version>5.2.4.RELEASE</version>
+         <groupId>org.springframework</groupId><artifactId>spring-context</artifactId><version>5.2.10.RELEASE</version>
          <optional>true</optional>
          <exclusions>
             <exclusion><groupId>org.springframework</groupId><artifactId>spring-aop</artifactId></exclusion>
